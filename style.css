@@ -22,17 +22,17 @@ body {
 .header__image-container { text-align: center;
 }
 }
-.centered-main-page-element {
+.task-section__add-task {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.task-section__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task-section__input-wrapper {
     display: flex;
 }
 ul {
