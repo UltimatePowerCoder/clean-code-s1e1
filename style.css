@@ -1,164 +1,172 @@
-body {
-    background-color: #f8f8f8;
-    color: #333;
+:root {
+    --color-background: #f8f8f8;
+    --color-border: #ddd;
+    --color-hover: #3a3a3a;
+    --color-text: #333;
+    --color-text-muted: #888;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
     font-family: "Lato", sans-serif;
-}
-
-.header__image-container {
+  }
+  
+  .header__image-container {
     display: block;
     width: 500px;
     margin: 0 auto;
     text-align: right;
-}
-
-.header__image {
+  }
+  
+  .header__image {
     width: 100%;
-}
-
-.header__link {
+  }
+  
+  .header__link {
     font-family: fantasy, cursive;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .header__image-container {
-        text-align: center;
+      text-align: center;
     }
-}
-
-.task-section__add-task {
+  }
+  
+  .task-section__add-task {
     display: block;
     margin: 0 auto;
-}
-
-.task-section{
+  }
+  
+  .task-section {
     width: 500px;
     margin: 0 auto;
-}
-
-.task-section__label {
+  }
+  
+  .task-section__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
-}
-
-.task-section__input-wrapper {
+  }
+  
+  .task-section__input-wrapper {
     display: flex;
     gap: 10px;
-}
-
-ul {
+  }
+  
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-input, button {
+  }
+  
+  input, button {
     outline: none;
-}
-
-button {
+  }
+  
+  button {
     background: none;
     border: none;
-    color: #888;
+    color: var(--color-text-muted);
     font-size: 15px;
     width: 60px;
     font-family: inherit;
     cursor: pointer;
     transition: color 200ms ease-in;
-}
-
-button:hover {
-    color: #3a3a3a;
-}
-
-h3,
-label[for="new-task"] {
-    color: #333;
+  }
+  
+  button:hover {
+    color: var(--color-hover);
+  }
+  
+  h3,
+  label[for="new-task"] {
+    color: var(--color-text);
     font-weight: 700;
     font-size: 15px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--color-text);
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
-}
-
-input[type="text"] {
+  }
+  
+  input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     background: #fff;
     border-radius: 6px;
-    color: #888;
-}
-
-input[type="text"]:focus {
-    color: #333;
-}
-
-label[for="new-task"] {
+    color: var(--color-text-muted);
+  }
+  
+  input[type="text"]:focus {
+    color: var(--color-text);
+  }
+  
+  label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
-}
-
-#new-task {
+  }
+  
+  #new-task {
     width: 318px;
-}
-
-li {
+  }
+  
+  li {
     overflow: hidden;
     padding: 20px 0;
-    border-bottom: 1px solid #eee;
-
+    border-bottom: 1px solid var(--color-border);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-li > * {
+  }
+  
+  li > * {
     vertical-align: middle;
-}
-
-li > input[type="checkbox"] {
+  }
+  
+  li > input[type="checkbox"] {
     margin: 0 10px;
-}
-
-li > label {
+  }
+  
+  li > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
-}
-
-li > input[type="text"] {
+  }
+  
+  li > input[type="text"] {
     width: 226px;
-}
-
-button.delete img {
+  }
+  
+  button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
-}
-
-button.delete img:hover {
+  }
+  
+  button.delete img:hover {
     transform: rotateZ(0);
-}
-
-#completed-tasks label {
+  }
+  
+  #completed-tasks label {
     text-decoration: line-through;
-    color: #888;
-}
-
-li input[type="text"] {
+    color: var(--color-text-muted);
+  }
+  
+  li input[type="text"] {
     display: none;
-}
-
-li.editMode input[type="text"] {
+  }
+  
+  li.editMode input[type="text"] {
     display: inline-block;
-}
-
-li.editMode label {
+  }
+  
+  li.editMode label {
     display: none;
-}
+  }
+  
