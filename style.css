@@ -169,4 +169,8 @@
   li.editMode label {
     display: none;
   }
-  
+
+  .footer {
+    width: 500px;
+    margin: 0 auto;
+  }

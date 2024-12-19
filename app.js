@@ -1,3 +1,5 @@
+alert("Здравствуй уважаемый проверяющий!\n К сожалению, я не до конца успел доделать задание до дедлайна, поэтому прикрепил ссылку на деплой, а не на PR.\n Ссылка на PR: https://github.com/UltimatePowerCoder/clean-code-s1e1/pull/1 добавлена в footer.");
+
 const taskInput = document.getElementById("new-task");
 const addButton = document.querySelector("button");
 const incompleteTaskHolder = document.getElementById("incompletetasks");
