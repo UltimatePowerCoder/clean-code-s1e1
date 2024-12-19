@@ -27,6 +27,10 @@ body {
 
 .task-section__add-task {
     display: block;
+    margin: 0 auto;
+}
+
+.task-section{
     width: 500px;
     margin: 0 auto;
 }
